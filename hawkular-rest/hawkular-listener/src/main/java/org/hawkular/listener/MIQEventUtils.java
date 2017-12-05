@@ -61,7 +61,7 @@ public class MIQEventUtils {
         }
 
         if (availType.equals(SERVER_AVAILABILITY_NAME)) {
-            String message = String.format("Avail change: %s [%s]", resourceId, availType);
+            String message = String.format("Avail change [%s]: %s [%s]", availType, resourceId, newAvail);
 
             utils.addEvent(null, false, feedId, resourceId, "Inventory Change", message, "hawkular_event",
                     "MiddlewareServer", message);
